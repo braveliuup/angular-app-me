@@ -12,10 +12,10 @@ module.exports = function (grunt) {
 
   // Default task.
   grunt.registerTask('default', ['jshint','build','karma:unit']);
-  grunt.registerTask('build', ['clean','html2js','concat','recess:build','copy:assets']);
+  grunt.registerTask('build', ['clean','html2js','concat','copy:assets','recess:build']);
   grunt.registerTask('release', ['clean','html2js','uglify','jshint','karma:unit','concat:index', 'recess:min','copy:assets']);
   grunt.registerTask('test-watch', ['karma:watch']);
-  grunt.registerTask('watch', ['watch']);
+  grunt.registerTask('watch-build', ['watch:build']);
 
   // Print a timestamp (useful for when watching)
   grunt.registerTask('timestamp', function() {

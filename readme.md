@@ -18,4 +18,14 @@
 
 8. 使用自动化构建工具，构建web前端应用。 本例使用grunt
 
-9. 配置grunt
+9. 配置grunt。
+
+10. 添加测试目录，配置测试文件unit.js, 集成karma
+
+# 开始编写angular应用
+1. 创建app目录和common目录以及less目录
+app目录存放项目源文件。 js和模板文件按功能区分放在一起
+common目录主要放angular相关内容，有directives，resources，security，services
+less目录用来存放less样式文件
+
+
